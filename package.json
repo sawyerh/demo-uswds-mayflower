@@ -2,10 +2,10 @@
   "name": "uswds-mayflower",
   "version": "1.0.0",
   "scripts": {
-    "build:css": "postcss styles/**/[!_]*.scss -d build --ext css",
-    "start": "npm run watch:css",
-    "prestart": "npm run build:css",
-    "watch:css": "chokidar \"styles/**/*.scss\" -c \"npm run build:css\""
+    "build": "postcss styles/**/[!_]*.scss -d build --ext css",
+    "start": "npm run watch",
+    "prestart": "npm run build",
+    "watch": "chokidar \"styles/**/*.scss\" -c \"npm run build\""
   },
   "dependencies": {
     "uswds": "^2.4.0"
