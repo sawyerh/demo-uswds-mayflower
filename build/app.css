@@ -1,32 +1,51 @@
 @charset "UTF-8";
 /* By default, USWDS outputs a warning when a color isn't a USWDS color token,*/
 /* which is expected sinces we're going to be using Mayflower HEX values instead.*/
-@font-face {
-  font-family: "Texta";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/mayflower/texta-book-webfont.woff2") format("woff2"), url("../fonts/mayflower/texta-book-webfont.woff") format("woff"), url("../fonts/mayflower/texta-book-webfont.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Texta";
-  font-style: italic;
-  font-weight: normal;
-  src: url("../fonts/mayflower/texta-bookitalic-webfont.woff2") format("woff2"), url("../fonts/mayflower/texta-bookitalic-webfont.woff") format("woff"), url("../fonts/mayflower/texta-bookitalic-webfont.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Texta";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/mayflower/texta-medium-webfont.woff2") format("woff2"), url("../fonts/mayflower/texta-medium-webfont.woff") format("woff"), url("../fonts/mayflower/texta-medium-webfont.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Texta";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/mayflower/texta-bold-webfont.woff2") format("woff2"), url("../fonts/mayflower/texta-bold-webfont.woff") format("woff"), url("../fonts/mayflower/texta-bold-webfont.ttf") format("truetype");
-}
-/* Modify USWDS components*/
-/* ==============================================*/
+/* -------------------------------------*/
+/* Import Mayflower brand variables for reference*/
+/* in our USWDS theme files*/
+/* -------------------------------------*/
+/* Apply Mayflower theme to USWDS*/
+/*
+--------------------------------------------------------------------------------
+U.S. Web Design System - Color overrides
+--------------------------------------------------------------------------------
+Read more about settings and USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/color
+--------------------------------------------------------------------------------
+*/
+/*
+----------------------------------------
+Theme palette colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+State palette colors
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+These can't be themed until this PR is published:
+https://github.com/uswds/uswds/pull/3287
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+----------------------------------------
+*/
+/*
+--------------------------------------------------------------------------------
+U.S. Web Design System - Typgography overrides
+--------------------------------------------------------------------------------
+Read more about settings and USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/typesetting/font-family/
+--------------------------------------------------------------------------------
+*/
+/* components theme import needs to be last*/
+/*
+--------------------------------------------------------------------------------
+U.S. Web Design System - Component overrides
+--------------------------------------------------------------------------------
+Read more about settings and USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens
+--------------------------------------------------------------------------------
+*/
+/* -------------------------------------*/
 /* Import *all* of USWDS*/
 /*! uswds @version */
 /*
@@ -1739,6 +1758,48 @@ template {
   src: url(../fonts/roboto-mono/roboto-mono-v5-latin-700italic.woff2) format("woff2"), url(../fonts/roboto-mono/roboto-mono-v5-latin-700italic.woff) format("woff"), url(../fonts/roboto-mono/roboto-mono-v5-latin-700italic.ttf) format("truetype");
 }
 @font-face {
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(../fonts/mayflower/texta-light-webfont.woff2) format("woff2"), url(../fonts/mayflower/texta-light-webfont.woff) format("woff"), url(../fonts/mayflower/texta-light-webfont.ttf) format("truetype");
+}
+@font-face {
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(../fonts/mayflower/texta-book-webfont.woff2) format("woff2"), url(../fonts/mayflower/texta-book-webfont.woff) format("woff"), url(../fonts/mayflower/texta-book-webfont.ttf) format("truetype");
+}
+@font-face {
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(../fonts/mayflower/texta-bold-webfont.woff2) format("woff2"), url(../fonts/mayflower/texta-bold-webfont.woff) format("woff"), url(../fonts/mayflower/texta-bold-webfont.ttf) format("truetype");
+}
+@font-face {
+  font-family: Texta;
+  font-style: italic;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(../fonts/mayflower/texta-lightitalic-webfont.woff2) format("woff2"), url(../fonts/mayflower/texta-lightitalic-webfont.woff) format("woff"), url(../fonts/mayflower/texta-lightitalic-webfont.ttf) format("truetype");
+}
+@font-face {
+  font-family: Texta;
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(../fonts/mayflower/texta-bookitalic-webfont.woff2) format("woff2"), url(../fonts/mayflower/texta-bookitalic-webfont.woff) format("woff"), url(../fonts/mayflower/texta-bookitalic-webfont.ttf) format("truetype");
+}
+@font-face {
+  font-family: Texta;
+  font-style: italic;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(../fonts/mayflower/texta-bolditalic-webfont.woff2) format("woff2"), url(../fonts/mayflower/texta-bolditalic-webfont.woff) format("woff"), url(../fonts/mayflower/texta-bolditalic-webfont.ttf) format("truetype");
+}
+@font-face {
   font-family: Merriweather Web;
   font-style: normal;
   font-weight: 300;
@@ -1833,7 +1894,7 @@ dfn {
 /*! uswds @version */
 body {
   background-color: white;
-  color: #1b1b1b;
+  color: #141414;
   overflow-x: hidden;
 }
 
@@ -1903,10 +1964,10 @@ body {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: subpixel-antialiased;
   background-color: #00bde3;
-  color: #1b1b1b;
+  color: #141414;
 }
 .usa-button--accent-cool:visited {
-  color: #1b1b1b;
+  color: #141414;
 }
 .usa-button--accent-cool:hover, .usa-button--accent-cool.usa-button--hover {
   -moz-osx-font-smoothing: grayscale;
@@ -2021,10 +2082,10 @@ body {
   background-color: #388557;
 }
 .usa-button--secondary:hover, .usa-button--secondary.usa-button--hover {
-  background-color: #30734b;
+  background-color: #214f34;
 }
 .usa-button--secondary:active, .usa-button--secondary.usa-button--active {
-  background-color: #296140;
+  background-color: #1c442d;
 }
 
 .usa-button--big {
@@ -2179,7 +2240,7 @@ img {
      -moz-appearance: none;
           appearance: none;
   border-radius: 0;
-  color: #1b1b1b;
+  color: #141414;
   display: block;
   height: 2.5rem;
   margin-top: 0.5rem;
@@ -2202,7 +2263,7 @@ img {
 
 .usa-form-group--error {
   border-left-width: 0.25rem;
-  border-left-color: #cd0d0d;
+  border-left-color: #b50909;
   border-left-style: solid;
   margin-top: 2rem;
   padding-left: 1rem;
@@ -2223,7 +2284,7 @@ img {
 .usa-error-message {
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
-  color: #cd0d0d;
+  color: #b50909;
   display: block;
   font-weight: bold;
 }
@@ -2233,7 +2294,7 @@ img {
 }
 
 .usa-label--required {
-  color: #cd0d0d;
+  color: #b50909;
 }
 
 .usa-label {
@@ -2542,7 +2603,7 @@ img {
 
 .usa-input--error {
   border-width: 0.25rem;
-  border-color: #cd0d0d;
+  border-color: #b50909;
   border-style: solid;
 }
 
@@ -4534,7 +4595,7 @@ img {
   margin-top: 0;
   list-style-type: none;
   padding-left: 0;
-  color: #1b1b1b;
+  color: #141414;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -4618,7 +4679,7 @@ img {
   background-color: #f0f0f0;
   background-position: right 1.25rem center;
   background-size: 1rem;
-  color: #1b1b1b;
+  color: #141414;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
@@ -4650,7 +4711,7 @@ img {
 }
 .usa-accordion__button:hover {
   background-color: #dcdee0;
-  color: #1b1b1b;
+  color: #141414;
   text-decoration: none;
 }
 
@@ -4771,10 +4832,10 @@ img {
   background-image: url("../img/alerts/error.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
   background-image: url("../img/alerts/error.svg"), linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
-  background-color: #fae7e7;
+  background-color: #f4e3db;
 }
 .usa-alert--error::before {
-  background-color: #cd0d0d;
+  background-color: #d63e04;
 }
 .usa-alert--error .usa-alert__body {
   padding-left: 3.25rem;
@@ -5022,7 +5083,7 @@ img {
 @media all and (min-width: 40em) {
   .usa-banner__header--expanded {
     background-color: transparent;
-    color: #1b1b1b;
+    color: #141414;
     display: block;
     font-size: 0.92rem;
     font-weight: normal;
@@ -5346,7 +5407,7 @@ img {
   padding-right: 1rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  color: #1b1b1b;
+  color: #141414;
   text-decoration: none;
   font-weight: bold;
   display: block;
@@ -5397,7 +5458,7 @@ img {
   line-height: 1;
 }
 .usa-footer__contact-info a {
-  color: #1b1b1b;
+  color: #141414;
   text-decoration: none;
 }
 .usa-footer__contact-info a:hover {
@@ -5444,7 +5505,7 @@ img {
   background-color: #dcdee0;
 }
 .usa-footer__secondary-section a {
-  color: #1b1b1b;
+  color: #141414;
 }
 
 .usa-footer__logo {
@@ -5860,7 +5921,7 @@ img {
   }
 }
 .usa-logo a {
-  color: #1b1b1b;
+  color: #141414;
   text-decoration: none;
 }
 
@@ -8370,19 +8431,19 @@ example:
 }
 
 .bg-base-darkest {
-  background-color: #1b1b1b;
+  background-color: #141414;
 }
 
 .hover\:bg-base-darkest:hover {
-  background-color: #1b1b1b;
+  background-color: #141414;
 }
 
 .bg-ink {
-  background-color: #1b1b1b;
+  background-color: #141414;
 }
 
 .hover\:bg-ink:hover {
-  background-color: #1b1b1b;
+  background-color: #141414;
 }
 
 .bg-primary-lightest {
@@ -8458,19 +8519,19 @@ example:
 }
 
 .bg-secondary-dark {
-  background-color: #30734b;
+  background-color: #214f34;
 }
 
 .hover\:bg-secondary-dark:hover {
-  background-color: #30734b;
+  background-color: #214f34;
 }
 
 .bg-secondary-darker {
-  background-color: #296140;
+  background-color: #1c442d;
 }
 
 .hover\:bg-secondary-darker:hover {
-  background-color: #296140;
+  background-color: #1c442d;
 }
 
 .bg-accent-warm-darker {
@@ -11786,67 +11847,67 @@ example:
   }
 }
 .border-base-darkest {
-  border-color: #1b1b1b;
+  border-color: #141414;
 }
 
 .hover\:border-base-darkest:hover {
-  border-color: #1b1b1b;
+  border-color: #141414;
 }
 
 @media all and (min-width: 30em) {
   .mobile-lg\:border-base-darkest {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
   .mobile-lg\:border-base-darkest .mobile-lg\:hover\:border-base-darkest:hover {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
 }
 @media all and (min-width: 40em) {
   .tablet\:border-base-darkest {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
   .tablet\:border-base-darkest .tablet\:hover\:border-base-darkest:hover {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
 }
 @media all and (min-width: 64em) {
   .desktop\:border-base-darkest {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
   .desktop\:border-base-darkest .desktop\:hover\:border-base-darkest:hover {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
 }
 .border-ink {
-  border-color: #1b1b1b;
+  border-color: #141414;
 }
 
 .hover\:border-ink:hover {
-  border-color: #1b1b1b;
+  border-color: #141414;
 }
 
 @media all and (min-width: 30em) {
   .mobile-lg\:border-ink {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
   .mobile-lg\:border-ink .mobile-lg\:hover\:border-ink:hover {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
 }
 @media all and (min-width: 40em) {
   .tablet\:border-ink {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
   .tablet\:border-ink .tablet\:hover\:border-ink:hover {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
 }
 @media all and (min-width: 64em) {
   .desktop\:border-ink {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
   .desktop\:border-ink .desktop\:hover\:border-ink:hover {
-    border-color: #1b1b1b;
+    border-color: #141414;
   }
 }
 .border-primary-lightest {
@@ -12138,67 +12199,67 @@ example:
   }
 }
 .border-secondary-dark {
-  border-color: #30734b;
+  border-color: #214f34;
 }
 
 .hover\:border-secondary-dark:hover {
-  border-color: #30734b;
+  border-color: #214f34;
 }
 
 @media all and (min-width: 30em) {
   .mobile-lg\:border-secondary-dark {
-    border-color: #30734b;
+    border-color: #214f34;
   }
   .mobile-lg\:border-secondary-dark .mobile-lg\:hover\:border-secondary-dark:hover {
-    border-color: #30734b;
+    border-color: #214f34;
   }
 }
 @media all and (min-width: 40em) {
   .tablet\:border-secondary-dark {
-    border-color: #30734b;
+    border-color: #214f34;
   }
   .tablet\:border-secondary-dark .tablet\:hover\:border-secondary-dark:hover {
-    border-color: #30734b;
+    border-color: #214f34;
   }
 }
 @media all and (min-width: 64em) {
   .desktop\:border-secondary-dark {
-    border-color: #30734b;
+    border-color: #214f34;
   }
   .desktop\:border-secondary-dark .desktop\:hover\:border-secondary-dark:hover {
-    border-color: #30734b;
+    border-color: #214f34;
   }
 }
 .border-secondary-darker {
-  border-color: #296140;
+  border-color: #1c442d;
 }
 
 .hover\:border-secondary-darker:hover {
-  border-color: #296140;
+  border-color: #1c442d;
 }
 
 @media all and (min-width: 30em) {
   .mobile-lg\:border-secondary-darker {
-    border-color: #296140;
+    border-color: #1c442d;
   }
   .mobile-lg\:border-secondary-darker .mobile-lg\:hover\:border-secondary-darker:hover {
-    border-color: #296140;
+    border-color: #1c442d;
   }
 }
 @media all and (min-width: 40em) {
   .tablet\:border-secondary-darker {
-    border-color: #296140;
+    border-color: #1c442d;
   }
   .tablet\:border-secondary-darker .tablet\:hover\:border-secondary-darker:hover {
-    border-color: #296140;
+    border-color: #1c442d;
   }
 }
 @media all and (min-width: 64em) {
   .desktop\:border-secondary-darker {
-    border-color: #296140;
+    border-color: #1c442d;
   }
   .desktop\:border-secondary-darker .desktop\:hover\:border-secondary-darker:hover {
-    border-color: #296140;
+    border-color: #1c442d;
   }
 }
 .border-accent-warm-darker {
@@ -13823,19 +13884,19 @@ example:
 }
 
 .text-base-darkest {
-  color: #1b1b1b;
+  color: #141414;
 }
 
 .hover\:text-base-darkest:hover {
-  color: #1b1b1b;
+  color: #141414;
 }
 
 .text-ink {
-  color: #1b1b1b;
+  color: #141414;
 }
 
 .hover\:text-ink:hover {
-  color: #1b1b1b;
+  color: #141414;
 }
 
 .text-primary-lightest {
@@ -13911,19 +13972,19 @@ example:
 }
 
 .text-secondary-dark {
-  color: #30734b;
+  color: #214f34;
 }
 
 .hover\:text-secondary-dark:hover {
-  color: #30734b;
+  color: #214f34;
 }
 
 .text-secondary-darker {
-  color: #296140;
+  color: #1c442d;
 }
 
 .hover\:text-secondary-darker:hover {
-  color: #296140;
+  color: #1c442d;
 }
 
 .text-accent-warm-darker {
@@ -22073,11 +22134,11 @@ example:
 }
 
 .outline-base-darkest {
-  outline-color: #1b1b1b;
+  outline-color: #141414;
 }
 
 .outline-ink {
-  outline-color: #1b1b1b;
+  outline-color: #141414;
 }
 
 .outline-primary-lightest {
@@ -22117,11 +22178,11 @@ example:
 }
 
 .outline-secondary-dark {
-  outline-color: #30734b;
+  outline-color: #214f34;
 }
 
 .outline-secondary-darker {
-  outline-color: #296140;
+  outline-color: #1c442d;
 }
 
 .outline-accent-warm-darker {
@@ -25124,23 +25185,23 @@ example:
 }
 
 .underline-base-darkest {
-  -webkit-text-decoration-color: #1b1b1b;
-          text-decoration-color: #1b1b1b;
+  -webkit-text-decoration-color: #141414;
+          text-decoration-color: #141414;
 }
 
 .hover\:underline-base-darkest:hover {
-  -webkit-text-decoration-color: #1b1b1b;
-          text-decoration-color: #1b1b1b;
+  -webkit-text-decoration-color: #141414;
+          text-decoration-color: #141414;
 }
 
 .underline-ink {
-  -webkit-text-decoration-color: #1b1b1b;
-          text-decoration-color: #1b1b1b;
+  -webkit-text-decoration-color: #141414;
+          text-decoration-color: #141414;
 }
 
 .hover\:underline-ink:hover {
-  -webkit-text-decoration-color: #1b1b1b;
-          text-decoration-color: #1b1b1b;
+  -webkit-text-decoration-color: #141414;
+          text-decoration-color: #141414;
 }
 
 .underline-primary-lightest {
@@ -25234,23 +25295,23 @@ example:
 }
 
 .underline-secondary-dark {
-  -webkit-text-decoration-color: #30734b;
-          text-decoration-color: #30734b;
+  -webkit-text-decoration-color: #214f34;
+          text-decoration-color: #214f34;
 }
 
 .hover\:underline-secondary-dark:hover {
-  -webkit-text-decoration-color: #30734b;
-          text-decoration-color: #30734b;
+  -webkit-text-decoration-color: #214f34;
+          text-decoration-color: #214f34;
 }
 
 .underline-secondary-darker {
-  -webkit-text-decoration-color: #296140;
-          text-decoration-color: #296140;
+  -webkit-text-decoration-color: #1c442d;
+          text-decoration-color: #1c442d;
 }
 
 .hover\:underline-secondary-darker:hover {
-  -webkit-text-decoration-color: #296140;
-          text-decoration-color: #296140;
+  -webkit-text-decoration-color: #1c442d;
+          text-decoration-color: #1c442d;
 }
 
 .underline-accent-warm-darker {

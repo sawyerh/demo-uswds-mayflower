@@ -2,13 +2,22 @@
 // which is expected sinces we're going to be using Mayflower HEX values instead.
 $theme-show-compile-warnings: false;
 
-@import "colors";
-@import "fonts";
+// -------------------------------------
+// Import Mayflower brand variables for reference
+// in our USWDS theme files
 
-// Modify USWDS components
-// ==============================================
-$theme-button-border-radius: 0;
-$theme-checkbox-border-radius: 0;
+@import "mayflower/colors";
 
+// -------------------------------------
+// Apply Mayflower theme to USWDS
+
+@import "uswds-theme-colors";
+@import "uswds-theme-typography";
+
+// components theme import needs to be last
+@import "uswds-theme-components";
+
+// -------------------------------------
 // Import *all* of USWDS
+
 @import "uswds";

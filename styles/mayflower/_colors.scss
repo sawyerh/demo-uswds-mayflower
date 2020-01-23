@@ -1,0 +1,49 @@
+// Theme colors
+
+// Primary Color
+$mayflower-color-bay-blue: #14558f;
+$mayflower-color-bay-blue-lighter: #8aaac7;
+$mayflower-color-bay-blue-lightest: #e7eef4;
+
+// Primary Alt Color
+$mayflower-color-berkshires-green: #388557;
+$mayflower-color-berkshires-green-lighter: #97c2a9;
+$mayflower-color-berkshires-green-lightest: #d6e7dd;
+$mayflower-color-berkshires-green-dark: #214f34;
+
+// Highlight and Warning Color
+$mayflower-color-duckling-yellow: #f6c51b;
+$mayflower-color-duckling-yellow-lighter: #fbe28d;
+$mayflower-color-duckling-yellow-lightest: #fef9e8;
+
+// Government to Government Color. Currently not in use.
+$mayflower-color-independence-cranberry: #680a1d;
+$mayflower-color-independence-cranberry-lighter: #ad7e88;
+
+// Base Gray Scale Colors
+$mayflower-color-revolution-gray: #141414;
+$mayflower-color-granite-gray: #535353;
+$mayflower-color-overcast-gray: #dcdcdc;
+$mayflower-color-platinum-gray: #f2f2f2;
+$mayflower-color-atlantic-gray: #707070;
+$mayflower-color-very-light-gray: #cccccc;
+
+// Error Colors
+$mayflower-color-error-red: #cd0d0d;
+$mayflower-color-error-red-lighter: #eeacac;
+$mayflower-color-error-red-lightest: #fcf3f3;
+
+// Full Gray Scale
+$mayflower-color-black: $mayflower-color-revolution-gray;
+$mayflower-color-gray-dark: $mayflower-color-granite-gray;
+$mayflower-color-gray: $mayflower-color-atlantic-gray;
+$mayflower-color-gray-light: $mayflower-color-overcast-gray;
+$mayflower-color-gray-lightest: $mayflower-color-platinum-gray;
+$mayflower-color-white: white;
+
+// Additional Global Colors Representing Special States
+$mayflower-color-error: $mayflower-color-error-red;
+$mayflower-color-error-lighter: $mayflower-color-error-red-lighter;
+$mayflower-color-error-lightest: $mayflower-color-error-red-lightest;
+$mayflower-color-warning: $mayflower-color-duckling-yellow;
+$mayflower-color-focus: #3e94cf;

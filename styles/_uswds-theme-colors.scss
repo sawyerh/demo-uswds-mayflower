@@ -1,0 +1,64 @@
+/*
+--------------------------------------------------------------------------------
+U.S. Web Design System - Color overrides
+--------------------------------------------------------------------------------
+Read more about settings and USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/color
+--------------------------------------------------------------------------------
+*/
+
+/*
+----------------------------------------
+Theme palette colors
+----------------------------------------
+*/
+
+// Base colors
+$theme-color-base: $mayflower-color-gray-dark;
+$theme-color-base-darkest: $mayflower-color-black;
+$theme-color-base-ink: $mayflower-color-black;
+
+// Primary colors
+$theme-color-primary-lightest: $mayflower-color-bay-blue-lightest;
+$theme-color-primary-lighter: $mayflower-color-bay-blue-lighter;
+$theme-color-primary-light: lighten($mayflower-color-bay-blue, 5%);
+$theme-color-primary: $mayflower-color-bay-blue;
+$theme-color-primary-vivid: false;
+$theme-color-primary-dark: darken($mayflower-color-bay-blue, 5%);
+$theme-color-primary-darker: darken($mayflower-color-bay-blue, 10%);
+$theme-color-primary-darkest: false;
+
+// Secondary colors
+$theme-color-secondary-lightest: false;
+$theme-color-secondary-lighter: $mayflower-color-berkshires-green-lightest;
+$theme-color-secondary-light: $mayflower-color-berkshires-green-lighter;
+$theme-color-secondary: $mayflower-color-berkshires-green;
+$theme-color-secondary-vivid: false;
+$theme-color-secondary-dark: $mayflower-color-berkshires-green-dark;
+$theme-color-secondary-darker: darken(
+  $mayflower-color-berkshires-green-dark,
+  3%
+);
+$theme-color-secondary-darkest: false;
+
+/*
+----------------------------------------
+State palette colors
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+These can't be themed until this PR is published:
+https://github.com/uswds/uswds/pull/3287
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+----------------------------------------
+*/
+
+// $theme-color-error-lighter: $mayflower-color-error-red-lightest;
+// $theme-color-error-light: $mayflower-color-error-red-lighter;
+// $theme-color-error: $mayflower-color-error-red;
+// $theme-color-error-dark: darken($mayflower-color-error-red, 3%);
+// $theme-color-error-darker: darken($mayflower-color-error-red, 6%);
+
+// $theme-color-success-lighter: #d6e7dd;
+// $theme-color-success-light: #97c2a9;
+// $theme-color-success: #388557;
+// $theme-color-success-dark: $theme-color-secondary-dark;
+// $theme-color-success-darker: $theme-color-secondary-darker;
