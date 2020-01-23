@@ -1,0 +1,14 @@
+// By default, USWDS outputs a warning when a color isn't a USWDS color token,
+// which is expected sinces we're going to be using Mayflower HEX values instead.
+$theme-show-compile-warnings: false;
+
+@import "colors";
+@import "fonts";
+
+// Modify USWDS components
+// ==============================================
+$theme-button-border-radius: 0;
+$theme-checkbox-border-radius: 0;
+
+// Import *all* of USWDS
+@import "uswds";

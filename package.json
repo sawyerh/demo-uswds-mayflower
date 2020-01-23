@@ -1,0 +1,20 @@
+{
+  "name": "uswds-mayflower",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "postcss styles/**/[!_]*.scss -d build --ext css",
+    "start": "npm run watch:css",
+    "prestart": "npm run build:css",
+    "watch:css": "chokidar \"styles/**/*.scss\" -c \"npm run build:css\""
+  },
+  "dependencies": {
+    "uswds": "^2.4.0"
+  },
+  "devDependencies": {
+    "@csstools/postcss-sass": "^4.0.0",
+    "autoprefixer": "^9.7.4",
+    "chokidar-cli": "^2.1.0",
+    "postcss-cli": "^7.1.0",
+    "postcss-scss": "^2.0.0"
+  }
+}

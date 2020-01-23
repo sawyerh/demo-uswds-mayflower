@@ -1,0 +1,30 @@
+$theme-color-primary-lightest: #e7eef4;
+$theme-color-primary-lighter: #8aaac7;
+$theme-color-primary-light: lighten(#14558f, 5%);
+$theme-color-primary: #14558f;
+$theme-color-primary-vivid: false;
+$theme-color-primary-dark: darken($theme-color-primary, 5%);
+$theme-color-primary-darker: darken($theme-color-primary, 10%);
+$theme-color-primary-darkest: false;
+
+// Berkshire
+$theme-color-secondary-lightest: false;
+$theme-color-secondary-lighter: #d6e7dd;
+$theme-color-secondary-light: #97c2a9;
+$theme-color-secondary: #388557;
+$theme-color-secondary-vivid: false;
+$theme-color-secondary-dark: darken($theme-color-secondary, 5%);
+$theme-color-secondary-darker: darken($theme-color-secondary, 10%);
+$theme-color-secondary-darkest: false;
+
+$theme-color-error-lighter: #fae7e7;
+$theme-color-error-light: #ad7e88;
+$theme-color-error: #cd0d0d;
+$theme-color-error-dark: #cd0d0d;
+$theme-color-error-darker: #680a1d;
+
+// $theme-color-success-lighter: #d6e7dd;
+// $theme-color-success-light: #97c2a9;
+// $theme-color-success: #388557;
+// $theme-color-success-dark: $theme-color-secondary-dark;
+// $theme-color-success-darker: $theme-color-secondary-darker;

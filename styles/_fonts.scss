@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Texta";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/mayflower/texta-book-webfont.woff2") format("woff2"),
+    url("../fonts/mayflower/texta-book-webfont.woff") format("woff"),
+    url("../fonts/mayflower/texta-book-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Texta";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/mayflower/texta-bookitalic-webfont.woff2") format("woff2"),
+    url("../fonts/mayflower/texta-bookitalic-webfont.woff") format("woff"),
+    url("../fonts/mayflower/texta-bookitalic-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Texta";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/mayflower/texta-medium-webfont.woff2") format("woff2"),
+    url("../fonts/mayflower/texta-medium-webfont.woff") format("woff"),
+    url("../fonts/mayflower/texta-medium-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Texta";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/mayflower/texta-bold-webfont.woff2") format("woff2"),
+    url("../fonts/mayflower/texta-bold-webfont.woff") format("woff"),
+    url("../fonts/mayflower/texta-bold-webfont.ttf") format("truetype");
+}
+
+$theme-typeface-tokens: (
+  texta: (
+    display-name: "Texta",
+    cap-height: 295px
+  )
+);
+
+$theme-font-type-sans: "texta";
+$theme-font-role-heading: "sans";
+$theme-font-role-body: "sans";
+$theme-font-role-alt: "sans";

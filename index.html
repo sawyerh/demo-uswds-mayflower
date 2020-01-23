@@ -1,0 +1,252 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="build/app.css">
+  </head>
+  <body class="margin-6">
+
+    <h2 class="margin-top-10">Typography</h2>
+
+    <div class="usa-prose">
+      <section class="usa-prose margin-top-1 measure-5">
+        <h1>Heading 1</h1>
+        <p class="usa-intro"><strong>Intro text</strong>: Great Smoky Mountains National Park straddles the border of North Carolina and Tennessee.</p>
+
+        <h2>Heading 2</h2>
+
+        <h3>Heading 3</h3>
+        <p>The sprawling landscape encompasses lush forests and an abundance of wildflowers that bloom year-round. Streams, rivers and waterfalls appear along hiking routes that include a segment of the Appalachian Trail.</p>
+
+        <h4>Heading 4</h4>
+        <p>World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park.</p>
+        <p>Right now scientists think that we only know about 17 percent of the plants and animals that live in the park, or about 17,000 species of a probable 100,000 different organisms.</p>
+
+        <h5>Heading 5</h5>
+        <p>Entrance to Great Smoky Mountains National Park is free. The park is one of the few national parks where no entrance fees are charged.</p>
+
+        <ul>
+          <li>Unordered list item</li>
+          <li>Unordered list item</li>
+          <li>Unordered list item</li>
+        </ul>
+
+        <p>Right now scientists think that we only know about 17 percent of the plants and animals that live in the park, or about 17,000 species of a probable 100,000 different organisms.</p>
+
+        <ol>
+          <li>Ordered list item</li>
+          <li>Ordered list item</li>
+          <li>Ordered list item</li>
+        </ol>
+      </section>
+    </div>
+
+    <h2 class="margin-top-10">Form controls</h2>
+
+    <form class="usa-form">
+      <label class="usa-label" for="input-type-text">Text input label</label>
+      <input class="usa-input" id="input-type-text" name="input-type-text" type="text">
+
+      <label class="usa-label" for="input-focus">Text input focused</label>
+      <input class="usa-input usa-focus" id="input-focus" name="input-focus" type="text">
+
+      <!-- States aren't themeable yet
+        <div class="usa-form-group usa-form-group--error">
+        <label class="usa-label usa-label--error" for="input-error">Text input error</label>
+        <span class="usa-error-message" id="input-error-message" role="alert">Helpful error message</span>
+        <input class="usa-input usa-input--error" id="input-error" name="input-error" type="text" aria-describedby="input-error-message">
+      </div>
+
+      <label class="usa-label" for="input-success">Text input success</label>
+      <input class="usa-input usa-input--success" id="input-success" name="input-success" type="text"> -->
+
+      <label class="usa-label" for="input-type-textarea">Text area label</label>
+      <textarea class="usa-textarea" id="input-type-textarea" name="input-type-textarea"></textarea>
+    </form>
+
+    <form class="usa-form">
+      <fieldset class="usa-fieldset">
+        <legend class="usa-sr-only">Historical figures 1</legend>
+        <div class="usa-checkbox">
+          <input class="usa-checkbox__input" id="truth" type="checkbox" name="historical-figures-1" value="truth" checked>
+          <label class="usa-checkbox__label" for="truth">Sojourner Truth</label>
+        </div>
+        <div class="usa-checkbox">
+          <input class="usa-checkbox__input" id="douglass" type="checkbox" name="historical-figures-1" value="douglass">
+          <label class="usa-checkbox__label" for="douglass">Frederick Douglass</label>
+        </div>
+        <div class="usa-checkbox">
+          <input class="usa-checkbox__input" id="washington" type="checkbox" name="historical-figures-1" value="washington">
+          <label class="usa-checkbox__label" for="washington">Booker T. Washington</label>
+        </div>
+        <div class="usa-checkbox">
+          <input class="usa-checkbox__input" id="carver" type="checkbox" name="historical-figures-1" disabled>
+          <label class="usa-checkbox__label" for="carver">George Washington Carver</label>
+        </div>
+      </fieldset>
+    </form>
+
+    <form class="usa-form">
+      <fieldset class="usa-fieldset">
+        <legend class="usa-label">Date of birth</legend>
+        <span class="usa-hint" id="dobHint">For example: 04 28 1986</span>
+        <div class="usa-memorable-date">
+          <div class="usa-form-group usa-form-group--month">
+            <label class="usa-label" for="date_of_birth_1">Month</label>
+            <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_1" name="date_of_birth_1" type="text" min="1" max="12" value="">
+          </div>
+          <div class="usa-form-group usa-form-group--day">
+            <label class="usa-label" for="date_of_birth_2">Day</label>
+            <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_2" name="date_of_birth_2" type="text" min="1" max="31" value="">
+          </div>
+          <div class="usa-form-group usa-form-group--year">
+            <label class="usa-label" for="date_of_birth_3">Year</label>
+            <input class="usa-input usa-input--inline" aria-describedby="dobHint" id="date_of_birth_3" name="date_of_birth_3" type="text" min="1900" max="2019" value="">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <form class="usa-form">
+      <label class="usa-label" for="options">Dropdown label</label>
+      <select class="usa-select" name="options" id="options">
+        <option value="value1">Option A</option>
+        <option value="value2">Option B</option>
+        <option value="value3">Option C</option>
+      </select>
+    </form>
+
+    <h2 class="margin-top-10">Buttons</h2>
+
+    <h6>Default</h6>
+    <button class="usa-button ">Default</button>
+    <button class="usa-button  usa-button--hover">Hover</button>
+    <button class="usa-button  usa-button--active">Active</button>
+    <button class="usa-button  usa-focus">Focus</button>
+    <button class="usa-button " disabled>Disabled</button><button class="usa-button  usa-button--unstyled">Unstyled button</button>
+
+    <h6>Secondary color</h6>
+    <button class="usa-button usa-button--secondary">Default</button>
+    <button class="usa-button usa-button--secondary usa-button--hover">Hover</button>
+    <button class="usa-button usa-button--secondary usa-button--active">Active</button>
+    <button class="usa-button usa-button--secondary usa-focus">Focus</button>
+    <button class="usa-button usa-button--secondary" disabled>Disabled</button><button class="usa-button usa-button--secondary usa-button--unstyled">Unstyled button</button>
+
+    <h6>Base color</h6>
+    <button class="usa-button usa-button--base">Default</button>
+    <button class="usa-button usa-button--base usa-button--hover">Hover</button>
+    <button class="usa-button usa-button--base usa-button--active">Active</button>
+    <button class="usa-button usa-button--base usa-focus">Focus</button>
+    <button class="usa-button usa-button--base" disabled>Disabled</button><button class="usa-button usa-button--base usa-button--unstyled">Unstyled button</button>
+
+    <h6>Outline</h6>
+    <button class="usa-button usa-button--outline">Default</button>
+    <button class="usa-button usa-button--outline usa-button--hover">Hover</button>
+    <button class="usa-button usa-button--outline usa-button--active">Active</button>
+    <button class="usa-button usa-button--outline usa-focus">Focus</button>
+    <button class="usa-button usa-button--outline" disabled>Disabled</button><button class="usa-button usa-button--outline usa-button--unstyled">Unstyled button</button>
+
+    <h6>Big button</h6>
+    <button class="usa-button usa-button--big">Default</button>
+    <button class="usa-button usa-button--big usa-button--unstyled">Unstyled button</button>
+
+    <!--
+      Alerts aren't themeable yet, but should be soon.
+
+      <h2 class="margin-top-10">Alerts</h2>
+
+    <div class="usa-alert usa-alert--success" >
+      <div class="usa-alert__body">
+        <h3 class="usa-alert__heading">Success status</h3>
+        <p class="usa-alert__text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+      </div>
+    </div>
+
+    <div class="usa-alert usa-alert--warning" >
+      <div class="usa-alert__body">
+        <h3 class="usa-alert__heading">Warning status</h3>
+        <p class="usa-alert__text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+      </div>
+    </div>
+
+    <div class="usa-alert usa-alert--error" role="alert">
+      <div class="usa-alert__body">
+        <h3 class="usa-alert__heading">Error status</h3>
+        <p class="usa-alert__text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+      </div>
+    </div>
+
+    <div class="usa-alert usa-alert--info" >
+      <div class="usa-alert__body">
+        <h3 class="usa-alert__heading">Informative status</h3>
+        <p class="usa-alert__text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+      </div>
+    </div> -->
+
+    <h2 class="margin-top-10">Tables</h2>
+
+    <table class="usa-table">
+      <caption>Bordered table</caption>
+      <thead>
+        <tr>
+          <th scope="col">Document title</th>
+          <th scope="col">Description</th>
+          <th scope="col">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Declaration of Independence</th>
+          <td>Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
+          <td>1776</td>
+        </tr>
+        <tr>
+          <th scope="row">Bill of Rights</th>
+          <td>The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
+          <td>1791</td>
+        </tr>
+        <tr>
+          <th scope="row">Declaration of Sentiments</th>
+          <td>A document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
+          <td>1848</td>
+        </tr>
+        <tr>
+          <th scope="row">Emancipation Proclamation</th>
+          <td>An executive order granting freedom to slaves in designated southern states.</td>
+          <td>1863</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="usa-table usa-table--borderless">
+      <caption>Borderless table</caption>
+      <thead>
+        <tr>
+          <th scope="col">Document Title</th>
+          <th scope="col">Description</th>
+          <th scope="col">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Declaration of Independence</th>
+          <td>Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
+          <td>1776</td>
+        </tr>
+        <tr>
+          <th scope="row">Bill of Rights</th>
+          <td>The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
+          <td>1791</td>
+        </tr>
+        <tr>
+          <th scope="row">Declaration of Sentiments</th>
+          <td>A document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
+          <td>1848</td>
+        </tr>
+        <tr>
+          <th scope="row">Emancipation Proclamation</th>
+          <td>An executive order granting freedom to slaves in designated southern states.</td>
+          <td>1863</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
