@@ -1,49 +1,56 @@
-// Theme colors
+/*
+--------------------------------------------------------------------------------
+Mayflower - Color palette
+--------------------------------------------------------------------------------
+This is an extended version of the current Mayflower color palette, which doesn't
+come with as wide a range of colors as the USWDS. The variable names have also been
+altered, adding a `mayflower` namespace. This file could eventually be contributed
+back to Mayflower and distributed as an NPM package.
+--------------------------------------------------------------------------------
+Related:
+https://massgovdigital.gitbook.io/mayflower/style/color
+https://github.com/massgov/mayflower/blob/develop/assets/scss/00-base/_colors.scss
+--------------------------------------------------------------------------------
+*/
 
-// Primary Color
-$mayflower-color-bay-blue: #14558f;
-$mayflower-color-bay-blue-lighter: #8aaac7;
-$mayflower-color-bay-blue-lightest: #e7eef4;
+$mayflower-focus: #3e94cf; // outline color used on focused elements
 
-// Primary Alt Color
-$mayflower-color-berkshires-green: #388557;
-$mayflower-color-berkshires-green-lighter: #97c2a9;
-$mayflower-color-berkshires-green-lightest: #d6e7dd;
-$mayflower-color-berkshires-green-dark: #214f34;
+// Primary
+$mayflower-bay-blue-lighter: #e7eef4; // "lightest" shade in Mayflower v1.0
+$mayflower-bay-blue-light: #8aaac7; // "lighter" shade in Mayflower v1.0
+$mayflower-bay-blue: #14558f;
+$mayflower-bay-blue-vivid: #005cae; // 🌟NEW
+$mayflower-bay-blue-dark: #0c4170; // 🌟NEW
+$mayflower-bay-blue-darker: #162e51; // 🌟NEW (plucked from USWDS)
 
-// Highlight and Warning Color
-$mayflower-color-duckling-yellow: #f6c51b;
-$mayflower-color-duckling-yellow-lighter: #fbe28d;
-$mayflower-color-duckling-yellow-lightest: #fef9e8;
+// Primary Alt
+$mayflower-berkshires-green-lighter: #ebf3ee; // "lightest" shade in Mayflower v1.0
+$mayflower-berkshires-green-light: #97c2a9; // "lighter" shade in Mayflower v1.0
+$mayflower-berkshires-green: #388557;
+$mayflower-berkshires-green-vivid: #1aac6c; // 🌟NEW
+$mayflower-berkshires-green-dark: #1d6e3e; // 🌟NEW
+$mayflower-berkshires-green-darker: #214f34; // "dark" shade in Mayflower v1.0
 
-// Government to Government Color. Currently not in use.
-$mayflower-color-independence-cranberry: #680a1d;
-$mayflower-color-independence-cranberry-lighter: #ad7e88;
+// Highlight and Warning
+$mayflower-duckling-yellow-lighter: #fef9e8; // "lightest" shade in Mayflower v1.0
+$mayflower-duckling-yellow-light: #fbe28d; // "lighter" shade in Mayflower v1.0
+$mayflower-duckling-yellow: #f6c51b;
+// $mayflower-duckling-yellow-dark inherits USWDS color value
+// $mayflower-duckling-yellow-darker inherits USWDS color value
 
-// Base Gray Scale Colors
-$mayflower-color-revolution-gray: #141414;
-$mayflower-color-granite-gray: #535353;
-$mayflower-color-overcast-gray: #dcdcdc;
-$mayflower-color-platinum-gray: #f2f2f2;
-$mayflower-color-atlantic-gray: #707070;
-$mayflower-color-very-light-gray: #cccccc;
-
-// Error Colors
-$mayflower-color-error-red: #cd0d0d;
-$mayflower-color-error-red-lighter: #eeacac;
-$mayflower-color-error-red-lightest: #fcf3f3;
+// Error
+$mayflower-error-red-lighter: #fae7e7; // "lightest" shade in Mayflower v1.0
+$mayflower-error-red-light: #eeacac; // "lighter" shade in Mayflower v1.0
+$mayflower-error-red: #cd0d0d;
+// $mayflower-error-red-dark inherits USWDS color value
+$mayflower-error-red-darker: #680a1d; // "independence-cranberry" in Mayflower v1.0
 
 // Full Gray Scale
-$mayflower-color-black: $mayflower-color-revolution-gray;
-$mayflower-color-gray-dark: $mayflower-color-granite-gray;
-$mayflower-color-gray: $mayflower-color-atlantic-gray;
-$mayflower-color-gray-light: $mayflower-color-overcast-gray;
-$mayflower-color-gray-lightest: $mayflower-color-platinum-gray;
-$mayflower-color-white: white;
-
-// Additional Global Colors Representing Special States
-$mayflower-color-error: $mayflower-color-error-red;
-$mayflower-color-error-lighter: $mayflower-color-error-red-lighter;
-$mayflower-color-error-lightest: $mayflower-color-error-red-lightest;
-$mayflower-color-warning: $mayflower-color-duckling-yellow;
-$mayflower-color-focus: #3e94cf;
+$mayflower-white: white;
+$mayflower-gray-lightest: #f2f2f2; // Referenced "platinum-gray" in Mayflower v1.0
+$mayflower-gray-lighter: #dcdcdc; // Referenced "overcast-gray" and named "light" in Mayflower v1.0
+// $mayflower-gray-light inherits USWDS color value
+$mayflower-gray: #707070; // Referenced "atlantic-gray" in Mayflower v1.0
+$mayflower-gray-dark: #535353; // Referenced "granite-gray" in Mayflower v1.0
+// $mayflower-gray-darker inherits USWDS color value
+$mayflower-gray-darkest: #141414; // Referenced "revolution-gray" and named "black" in Mayflower v1.0

@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="64" height="16" viewBox="0 0 64 16"><title>minus</title><path fill="#171717" fill-rule="evenodd" d="M62.726 1.167C61.878.389 60.846 0 59.636 0H4.362C3.151 0 2.12.388 1.272 1.166.422 1.944 0 2.888 0 4v8c0 1.112.424 2.056 1.272 2.833.849.778 1.88 1.167 3.091 1.167h55.272c1.211 0 2.242-.388 3.091-1.167.847-.777 1.272-1.72 1.272-2.832V4c0-1.111-.423-2.056-1.272-2.833z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="p" fill="#388557" fill-rule="nonzero" transform="translate(64.000000, 64.000000) rotate(-45.000000) translate(-64.000000, -64.000000) " points="71.4418605 128 71.4418605 71.4418605 128 71.4418605 128 56.5581395 71.4418605 56.5581395 71.4418605 2.13162821e-14 56.5581395 2.13162821e-14 56.5581395 56.5581395 0 56.5581395 0 71.4418605 56.5581395 71.4418605 56.5581395 128"></polygon>
+    </g>
+</svg>

@@ -5,19 +5,14 @@ $theme-show-compile-warnings: false;
 // -------------------------------------
 // Import Mayflower brand variables for reference
 // in our USWDS theme files
-
 @import "mayflower/colors";
 
 // -------------------------------------
 // Apply Mayflower theme to USWDS
-
 @import "uswds-theme-colors";
 @import "uswds-theme-typography";
-
-// components theme import needs to be last
 @import "uswds-theme-components";
 
 // -------------------------------------
 // Import *all* of USWDS
-
 @import "uswds";

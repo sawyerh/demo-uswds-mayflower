@@ -2,13 +2,55 @@
   <head>
     <link rel="stylesheet" href="build/app.css">
   </head>
-  <body class="margin-6">
+  <body>
+    <div class="grid-container">
+      <h2 class="margin-top-10">Header</h2>
+    </div>
 
+    <div class="bg-primary font-body-sm text-white text-right">
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-col-fill margin-y-1">
+            <span class="display-inline-block margin-right-1">
+              Sawyer Hollenshead
+            </span>
+            <button
+              class="usa-button usa-button--outline usa-button--inverse usa-button--unstyled width-auto"
+              onClick={handleSignOut}
+            >
+              Log out
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="bg-base-lightest">
+      <div class="grid-container">
+        <div class="usa-footer__logo padding-y-3 grid-row mobile-lg:grid-gap-1">
+          <div class="mobile-lg:grid-col-auto">
+            <img class="usa-footer__logo-img" src="img/logo-img.png" alt="" height="45">
+          </div>
+          <div class="mobile-lg:grid-col-auto">
+            <a
+              class="usa-logo__text font-heading-lg text-no-underline text-secondary"
+              href="/"
+              title="Home"
+              aria-label="Home"
+            >
+              Paid Family &amp; Medical Leave
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid-container">
     <h2 class="margin-top-10">Typography</h2>
 
     <div class="usa-prose">
       <section class="usa-prose margin-top-1 measure-5">
-        <h1>Heading 1</h1>
+        <h1>Mayflower-themed U.S. Web Design System</h1>
         <p class="usa-intro"><strong>Intro text</strong>: Great Smoky Mountains National Park straddles the border of North Carolina and Tennessee.</p>
 
         <h2>Heading 2</h2>
@@ -47,16 +89,6 @@
 
       <label class="usa-label" for="input-focus">Text input focused</label>
       <input class="usa-input usa-focus" id="input-focus" name="input-focus" type="text">
-
-      <!-- States aren't themeable yet
-        <div class="usa-form-group usa-form-group--error">
-        <label class="usa-label usa-label--error" for="input-error">Text input error</label>
-        <span class="usa-error-message" id="input-error-message" role="alert">Helpful error message</span>
-        <input class="usa-input usa-input--error" id="input-error" name="input-error" type="text" aria-describedby="input-error-message">
-      </div>
-
-      <label class="usa-label" for="input-success">Text input success</label>
-      <input class="usa-input usa-input--success" id="input-success" name="input-success" type="text"> -->
 
       <label class="usa-label" for="input-type-textarea">Text area label</label>
       <textarea class="usa-textarea" id="input-type-textarea" name="input-type-textarea"></textarea>
@@ -148,10 +180,9 @@
     <button class="usa-button usa-button--big">Default</button>
     <button class="usa-button usa-button--big usa-button--unstyled">Unstyled button</button>
 
-    <!--
-      Alerts aren't themeable yet, but should be soon.
+    <!-- Alerts aren't themeable yet, but should be soon.  -->
 
-      <h2 class="margin-top-10">Alerts</h2>
+    <h2 class="margin-top-10">Alerts</h2>
 
     <div class="usa-alert usa-alert--success" >
       <div class="usa-alert__body">
@@ -179,7 +210,7 @@
         <h3 class="usa-alert__heading">Informative status</h3>
         <p class="usa-alert__text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
       </div>
-    </div> -->
+    </div>
 
     <h2 class="margin-top-10">Tables</h2>
 
@@ -248,5 +279,153 @@
         </tr>
       </tbody>
     </table>
+
+    <h2 class="margin-top-10">Accordions</h2>
+
+    <div class="usa-accordion usa-accordion--bordered">
+      <h2 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="true" aria-controls="b-a1">
+          First Amendment
+        </button>
+      </h2>
+      <div id="b-a1" class="usa-accordion__content usa-prose">
+        <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+
+      </div>
+
+      <h2 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
+          Second Amendment
+        </button>
+      </h2>
+      <div id="b-a2" class="usa-accordion__content usa-prose" hidden="">
+        <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.</p> <ul><li>This is a list item</li><li>Another list item</li></ul>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="grid-container">
+    <h2 class="margin-top-10">Footer</h2>
+  </div>
+
+    <footer class="usa-footer usa-footer--big">
+      <div class="usa-footer__primary-section">
+        <div class="grid-container">
+          <div class="grid-row grid-gap">
+            <div class="tablet:grid-col-8">
+              <nav class="usa-footer__nav">
+                <div class="grid-row grid-gap-4">
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                      <h4 class="usa-footer__primary-link">Topic</h4>
+                      <ul class="usa-list usa-list--unstyled">
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link that's a bit longer than most of the others</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                      </ul>
+                    </section>
+                  </div>
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                      <h4 class="usa-footer__primary-link">Topic</h4>
+                      <ul class="usa-list usa-list--unstyled">
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link that's pretty long</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                      </ul>
+                    </section>
+                  </div>
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                      <h4 class="usa-footer__primary-link">Topic</h4>
+                      <ul class="usa-list usa-list--unstyled">
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                      </ul>
+                    </section>
+                  </div>
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                      <h4 class="usa-footer__primary-link">Topic</h4>
+                      <ul class="usa-list usa-list--unstyled">
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                        <li class="usa-footer__secondary-link"><a href="javascript:void(0);">Secondary link</a></li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="tablet:grid-col-4">
+              <div class="usa-sign-up">
+                <h3 class="usa-sign-up__heading">Sign up</h3>
+                <form class="usa-form">
+                  <label class="usa-label" for="email" id="">Your email address</label>
+                  <input class="usa-input" id="email" name="email" type="email">
+                  <button class="usa-button" type="submit">Sign up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="usa-footer__secondary-section">
+        <div class="grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+              <div class="mobile-lg:grid-col-auto">
+                <img class="usa-footer__logo-img" src="img/logo-img.png" alt="">
+              </div>
+              <div class="mobile-lg:grid-col-auto">
+                <h3 class="usa-footer__logo-heading">Name of Agency</h3>
+              </div>
+            </div>
+            <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+              <div class="usa-footer__social-links grid-row grid-gap-1">
+                <div class="grid-col-auto">
+                  <a class="usa-social-link usa-social-link--facebook" href="javascript:void(0);">
+                    <span>Facebook</span>
+                  </a>
+                </div>
+                <div class="grid-col-auto">
+                  <a class="usa-social-link usa-social-link--twitter" href="javascript:void(0);">
+                    <span>Twitter</span>
+                  </a>
+                </div>
+                <div class="grid-col-auto">
+                  <a class="usa-social-link usa-social-link--youtube" href="javascript:void(0);">
+                    <span>YouTube</span>
+                  </a>
+                </div>
+                <div class="grid-col-auto">
+                  <a class="usa-social-link usa-social-link--rss" href="javascript:void(0);">
+                    <span>RSS</span>
+                  </a>
+                </div>
+              </div>
+              <h3 class="usa-footer__contact-heading">Agency Contact Center</h3>
+              <address class="usa-footer__address">
+                <div class="usa-footer__contact-info grid-row grid-gap">
+                  <div class="grid-col-auto">
+                    <a href="tel:1-800-555-5555">(800) CALL-GOVT</a>
+                  </div>
+                  <div class="grid-col-auto">
+                    <a href="mailto:info@agency.gov">info@agency.gov</a>
+                  </div>
+                </div>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
