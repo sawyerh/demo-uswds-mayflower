@@ -71,6 +71,7 @@ Read more about settings and USWDS style tokens in the documentation:
 https://designsystem.digital.gov/design-tokens/typesetting/font-family/
 --------------------------------------------------------------------------------
 */
+/* Components needs imported last in the order of theme files*/
 /*
 --------------------------------------------------------------------------------
 U.S. Web Design System - Component overrides
@@ -2123,7 +2124,7 @@ body {
 }
 
 .usa-button--big {
-  border-radius: 0.25rem;
+  border-radius: 0;
   font-size: 1.69rem;
   padding: 1rem 1.5rem;
 }

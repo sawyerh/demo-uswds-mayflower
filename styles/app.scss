@@ -11,6 +11,7 @@ $theme-show-compile-warnings: false;
 // Apply Mayflower theme to USWDS
 @import "uswds-theme-colors";
 @import "uswds-theme-typography";
+// Components needs imported last in the order of theme files
 @import "uswds-theme-components";
 
 // -------------------------------------
