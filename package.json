@@ -8,7 +8,7 @@
     "watch": "chokidar \"styles/**/*.scss\" -c \"npm run build\""
   },
   "dependencies": {
-    "uswds": "^2.4.0"
+    "uswds": "^2.4.1"
   },
   "devDependencies": {
     "@csstools/postcss-sass": "^4.0.0",
